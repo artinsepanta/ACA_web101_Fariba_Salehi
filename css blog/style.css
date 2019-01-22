@@ -1,0 +1,111 @@
+body {
+ font-family: 'Timees Rew Roman', sans-serif;
+    margin: 50px auto;
+    width: 760px;
+}
+
+header {
+  display: grid;
+grid-template-columns: 40% 60%;
+width: 100%; 
+}  
+pic-pic {
+  width: 200px;
+  height: 150px;
+  margin: 5% 50%;
+}
+   
+  main {
+    font-family : "Times New Roman", Times, serif;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+  
+  nav > a {
+    margin: right;
+    height: 6%;
+    width: 10%;
+    color: rgb(62, 26, 78);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    border-radius: 18px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid rgb(26, 25, 25);
+  }
+  
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: none;
+    padding: 20px; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  #pic-pic {
+    top:0;
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 15% auto;
+    margin-right: 15%;
+    grid-column: 2/3;
+  }
+  
+  h1 {
+    
+    grid-column: 2/3;
+    margin: 3% auto;
+    }
+    
+  
+  
+  h1.important {
+      color: rgb(209, 105, 102);
+  }
+  h2 {
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-style: italic;
+  }
+  a:hover {
+    color: green;
+  }
+th{
+  font-family: 'Times New Roman', Times, serif;
+size:12px;
+background-color: bisque;
+padding: 50px;}  
+ button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 70%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    padding-bottom: 5%;
+    text-align: center;
+    color:black;
+    letter-spacing: 16px;
+    font-style: italic;
+  }
+  footer {
+  position: fixed;
+  left:o;
+  bottom: 0;
+  width: 100%;
+  background-color:green;
+  color: white;
+  text-align: center;
+}
