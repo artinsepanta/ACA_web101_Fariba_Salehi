@@ -1,0 +1,40 @@
+body{
+    background-color:rgb(245, 243, 236);
+font-family: 'Times New Roman', Times, serif;
+padding-top:0 lem;
+text-align:left;
+}
+header{
+     color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration-line: underline;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+h2{text-align: center;
+font-size: x-large ;
+font-style: italic;
+text-decoration-line: underline;
+}
+h3{text-align: center;
+font-size: x-large ;
+font-style: italic;
+text-decoration-line: underline;
+}
+h4{text-align: center;
+    font-size: x-large ;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+h5{text-align: center;
+    font-size: x-large ;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+h6{text-align: center;
+    font-size: x-large ;
+    font-style: italic;
+    text-decoration-line: underline;
+}
