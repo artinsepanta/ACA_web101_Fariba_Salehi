@@ -1,0 +1,37 @@
+.grid-container{
+   display:grid;
+   grid-template-columns: 1fr repeat(5 ,1fr);
+   grid-template-rows: 50px repeat(6 ,50px);
+}
+
+/*section h1*/
+h1{
+    font-style: italic;
+    font-size: 20px;
+   outline-color:red;
+   text-align:center;
+}
+
+/*section calculator-checkbox*/
+
+ .btn-checkbox {
+border:4opx;
+border-radius:8px;
+width:15px;
+height:20px;
+outline-color:goldenrod;
+
+ }
+
+ /*section calculator*/
+ .btn-calculator-keys{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }  
+ 

@@ -15,7 +15,7 @@ pic-pic {
   margin: 5% 50%;
 }
    
-  main {
+  grid-item header {
     font-family : "Times New Roman", Times, serif;
     height: auto;
     width: 100%;
@@ -23,32 +23,7 @@ pic-pic {
     grid-template-columns: 30% 40% 30%;
   }
   
-  nav > a {
-    margin: right;
-    height: 6%;
-    width: 10%;
-    color: rgb(62, 26, 78);
-    font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
-    border-radius: 18px;
-    background: transparent;
-    padding: 20px; 
-    text-align: center;
-    border: 2px solid rgb(26, 25, 25);
-  }
   
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: none;
-    padding: 20px; 
-  }
-  
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
   
   #pic-pic {
     top:0;

@@ -1,32 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-   <link rel="stylesheet" media="(max-width: 400px)" href="my400wide-style.css" />
+  <link rel="stylesheet" href="./src/Dashboard.html">
+  <link rel="stylesheet" media="(max-width: 400px)" href="my400wide-style.css" />
   <link rel="stylesheet" media="(max-width: 800px)" href="my800wide-style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <title>Welcome</title>
+   <link rel="stylesheet"  herf="backgrond_styles.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Dashboard</title>
 </head>
 <body>
-    <div class="grid">
-    <header> 
-            <button style="font-size:24px">News
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">nav 1</a></li>
-        <li><a href="#">nav 2</a></li>
-        <li><a href="#">nav 3</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>Main Title</h1>
-      <p>Main content</p>
-    </main>
-    <aside>aside</aside>
-    <div class="banner">div.banner</div>
-    <footer>footer</footer>
-  </div>
+   <div class="grid-container">
+
+      <!--SECTION header-->
+      <header class="grid-container" background-color="gray">
+         <div class="box">
+          <nav>
+              <ul>
+                 <li><a href="#">News</a></li>
+                 <br>
+                 <li><a href="#">Googel </a></li>
+                 <br>
+                 <li><a href="#">w3school</a></li>
+              </ul>
+            </nav>
+             <br>
+             <br>
+             <br>
+            <div style=" float: left"><img src="forecast.jpg" id="forecast"  framborder="0"  width="200" height="120"alt="Weather"></div>
+            <br>
+            <br>
+            <br>
+                  <br>
+            <div class="Clock">
+                  
+                <iframe src="http://free.timeanddate.com/clock/i6m1vkk6/n24/fs15/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="93" height="36"></iframe>
+          </div> 
+      </header>  
+
+<!--section greeting--> 
+    
+      <div class="grid-container">
+        <div class="box">  
+     <h1>Greeting</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores possimus illo esse atque maiores, rerum numquam, laboriosam voluptas consectetur a odio excepturi molestiae quis quas! Ipsam nam voluptatum placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure nam maiores alias, sequi similique quia incidunt? Reiciendis tempore aperiam sint minima culpa quae, nobis autem nostrum, adipisci, temporibus labore!</p>
+    </div>
+     
+      <!--SECTION calculator--> 
+     
+     <div id="calculator" class="grid-container">
+
+        <input type="checkbox" class="calculator-screen" value="0" disabled />
+      
+        <div class="calculator-keys">
+      
+          <button type="button" class="operator" value="+">+</button>
+          <button type="button" class="operator" value="-">-</button>
+          <button type="button" class="operator" value="*">&times;</button>
+          <button type="button" class="operator" value="/">&divide;</button>
+      
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+      
+      
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+      
+      
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+      
+      
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign" value="=">=</button>
+     </div>
+     <!--section to-->
+      <div id="To Do" class="grid-container" >
+          
+     <h1>To DO</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, illo iure quasi dignissimos possimus atque in doloribus repellendus odio. Voluptatibus perspiciatis commodi omnis doloremque repellendus, blanditiis cupiditate quam officia mollitia.</p>
+    </div>
+
+  
+  </body>
+  
+
     
     
-</body>
+    
+  
+    

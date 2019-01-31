@@ -1,0 +1,33 @@
+.grid-container{
+    display:grid;
+    grid-template-columns:30% auto;
+    grid-template-rows:60px auto;
+    grid-gap: 20px;
+}
+
+
+ul {
+    list-style-type: armenian;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+  }
+
+ h1{
+    align-self: auto;
+    background-color: rgb(185, 129, 56);
+    box-align:center;
+}
+p{
+    font-size:1.2em;
+    font-family: Arial, Helvetica, sans-serif,
+}
+
+.grid-item calculator{
+    grid-column: 2/3;
+    margin: 3% auto; 
+}
+.grid-item To Do{
+    grid-column: 2/3;
+    margin: 3% auto;
+}
