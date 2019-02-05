@@ -1,0 +1,43 @@
+body{ 
+    width:850px;
+    margin:0 auto;
+}
+/*section-a*/
+main{
+background-image: url('3space.jpg');
+width:850px;
+height:450px;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+margin-bottom:20px,
+}
+
+/*section-b*/
+/*section-b{
+    display: flex;
+    height: 374px;
+    margin:0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+p{
+  background-color:white;
+}
+.input{
+    width:80%;
+}
+@media(min-width:850px){
+    .flex-content{
+        display:flex;
+        flex-wrap: nowrap;
+    -webkit-box-flex-group: inherit; 
+    }
+    .flex-content>div{
+        background-color:#f1f1f1;
+        widows: 33%;
+        margin:10%;
+        text-align:left;
+        font-size:20px;
+        padding:10px;
+    }
+}

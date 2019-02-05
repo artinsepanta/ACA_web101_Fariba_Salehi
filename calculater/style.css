@@ -1,10 +1,10 @@
-.grid-container{
-   display:grid;
+.flexbox-container{
+   display:flex;
    grid-template-columns: 1fr repeat(5 ,1fr);
    grid-template-rows: 50px repeat(6 ,50px);
 }
 
-/*section h1*/
+section h1
 h1{
     font-style: italic;
     font-size: 20px;
@@ -12,18 +12,15 @@ h1{
    text-align:center;
 }
 
-/*section calculator-checkbox*/
-
  .btn-checkbox {
 border:4opx;
 border-radius:8px;
 width:15px;
 height:20px;
 outline-color:goldenrod;
-
  }
 
- /*section calculator*/
+ section calculator
  .btn-calculator-keys{
     background-color: #4CAF50; 
     border: none;
@@ -33,5 +30,79 @@ outline-color:goldenrod;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }  
- 
+  } 
+  butten{
+ box-sizing:content-box;
+ width:30px;
+ height:10px;
+border:2px s0lid gray;
+  }
+
+.flexBox-Container {
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.calculator .button {
+    border: red 1px solid;
+    height: 50px;
+    width: 25%;
+    break-inside: avoid;
+}
+
+
+
+#anomaly-keys-wrapper {                                            
+    display: flex;
+    width: 100%; 
+}
+
+#anomaly-keys-wrapper, 
+ section:first-child {                    
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+
+
+ first-child {                
+    flex: 1 0 33.33%;
+}
+
+#anomaly-keys-wrapper,
+ section:first-child ,
+ nth-child {   
+    flex-basis: 66.67%;
+}
+
+#anomaly-keys-wrapper,
+section:last-child {                      
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#anomaly-keys-wrapper ,
+.tall {                                      
+    width: 100%;
+    flex: 1;
+}
+
+@media (min-width: 321px) {
+   flex-content{
+      display:flex;
+      flex-wrap: nowrap;
+      -webkit-box-flex-group: inherit;
+    }
+}

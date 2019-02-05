@@ -1,3 +1,20 @@
+/*core styles*/
+body{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 25%
+}
+header{
+     margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 1.1em;
+    line-height: 1,5em;
+    text-align: center;
+}
+
+
+
 .grid-container{
     display:grid;
     grid-template-columns:30% auto;
@@ -24,10 +41,18 @@ p{
 }
 
 .grid-item calculator{
-    grid-column: 2/3;
+    grid-column: 4/5;
     margin: 3% auto; 
 }
 .grid-item To Do{
-    grid-column: 2/3;
+    grid-column: 3/4;
     margin: 3% auto;
+}
+
+
+@media(min-width: 700px){
+    .grid{
+       display: grid;
+       grid-template-columns: 1fr repeat(2, minmax(auto,25em));
+   }
 }
