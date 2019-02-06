@@ -1,0 +1,97 @@
+/*section-header*/
+.section-header{
+display:flex;
+flex-direction: row;
+
+}
+button {
+    height: auto;
+    border: 2px solid blueviolet;
+    margin:1px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border-spacing:3px;
+    background:yellow ;
+    padding: 5px; 
+    padding-bottom:5px;
+    text-align: center;
+    color:black;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  grid{
+    grid-row-gap: 20px;
+  }
+  /*section-main-a*/
+  .top-container{
+    display:flex;
+    flex-direction: row;
+    width: 820px;
+  }
+  .site-info{
+    display:flex;
+    flex-direction:column;  
+  }
+  .flex-container {
+    display:flex;
+    flex-direction:column;
+  }
+  h1{
+    font-family:'Playfair Display', serif; 
+    padding:10px;
+    text-align: center;
+    font-size: 3rem;
+       }
+  h2{
+      padding:10;
+      align-self:left auto;
+      font-size: 3rem;
+  } 
+  
+  /*section-b*/
+  #main-image {
+width:540px;
+margin-bottom: 30px;
+margin-top: 30px;
+  }
+ .flex-container {
+    display:flex;
+    
+  }
+  /* section-c */
+  .bottom-container{
+    display:flex;
+    flex-direction: row;
+  }
+  .pic {
+    width: 300px;
+  }
+  p {
+
+    margin:auto ;
+    padding:1px;
+    font-size:1em;
+    text-align:center;
+    margin-bottom: 30px;
+  }
+  #main-footer{
+    padding:2em;
+    background:black;
+    color :bisque;
+    text-align: center;
+}
+  .box, #main-footer div{
+    display:flex,
+    }
+  @media(min-width:800 px){
+    .flex-container{
+       display: flex;
+       
+ }
+
+
+
+
+  
+  
+
