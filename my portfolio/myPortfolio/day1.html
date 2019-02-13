@@ -4,24 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/style.pro.css">
+    <title>
+        My portfolio
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.pro.css">
 </head>
+
 <body>
-    <header><img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-    <nav>
-        <a> Resume</a>
-       <a>About me</a>
-        <a>My Blog</a>
-         <a class="has-border">Contact Me</a>
-    </nav>
+    <!--section-header-->
+
+    <header> 
+        <!--section-header-->
+        <div class="header" >
+           <div class="navigation">
+                <a href="../../Resume/resume/resume.html" id="About me">
+                    About me
+                </a>
+                <!-- <a href="../../myBlog/myBlog/index.html" id="My Blog" > My Blog</a>-->
+                <a class="active" href="#home">
+                    Home
+                </a>
+                <a href="#contact">
+                    Contact
+                </a>
+                <a href="#about">
+                    About
+                </a>
+                <!-- <img  src="../profile-pic/banner.jpg" width="100%" height="auto" class="banner" alt="save date"> -->
+            </div>
+        </div>
     </header>
+       <!--section-main-->
     <main>
-        <img src="../profile-pic/myProfilePic.jpg" id="profile-pic" alt="Headshot of Me"> 
-             <h1>Fariba Salehi</h1>
-            <h2>Student of Web Development.</h2>
-            <button id="portfolio">Portfolio</button>
+        <!--section-main-a-->
+        <div class="flex-container" id="section-main-a" >
+            <img src="../profile-pic/myProfilePic.jpg" id="profile-pic" alt="Headshot of Me"> 
+            <h1>Fariba Salehi</h1>
+            <h2>Student of Web Development</h2>
+        </div>  
+        <!--section-main-b-->
+    
+        <div class="section-main-b">
+            <video src="../video/boys.mp4" controls autoplay  ></video>
+            <iframe src="../../myBlog/myBlog/index.html" ></iframe>
+        </div>
+        <!--section-main-c--> 
+        <div id="section-main-c"> 
+            <p>Skills</p> 
+            <ul>
+                <li> Understanding Thinking Map</li>   
+                <li>Organizational development knowledge</li>
+                <li> Flexible and adaptive</li>
+                <li> Curriculum development</li>
+                <li>Calm under pressure</li>
+                <li>Critical thinker</li>
+            </ul> 
+        </div>
+        
     </main>
+
+    <!--section-footer-->
+    <footer id="main-footer" class="flex">
+            <div >faribasalehi@hotmail.com </div>
+    </footer>
   
 </body>
-</html>
+</html 
+

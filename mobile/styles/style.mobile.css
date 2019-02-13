@@ -99,19 +99,10 @@ color:(61, 60, 60);
       background:rgb(90, 90, 224);
     }
    
-    #main-footer{
-        padding:2em;
-        background:black;
-        color :bisque;
-        text-align: center;
-    }
+    
 
 
- @media(min-width:800 px){
-     .grid{
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto,25em));
-    }
+
     #section-a.content-text{
         columns:2;
         column-gap:2em;
