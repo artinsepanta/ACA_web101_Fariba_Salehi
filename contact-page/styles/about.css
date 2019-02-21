@@ -1,0 +1,222 @@
+@media screen and (min-width: 600px){
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(61, 57, 57);
+  background-image: url(../images/sliceofsky.jpg);
+}
+
+/*section-header*/
+
+#profile-pic {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  float: right; 
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-right:2%; 
+  margin-left:13px; 
+}
+
+strong{
+  font-size: 1rem;
+  font-stretch:normal;
+  margin-bottom: 7px;
+  text-align:right;
+  margin-left:22%;
+}
+small {
+  font-size: smaller;
+  margin-left:13px;
+}
+p{
+  font-stretch:normal;
+  text-align:left;
+  margin-left:11px;
+  font-size: 1rem;
+}
+.header{
+  display:flex;
+  flex-direction:row;
+}
+
+h1{
+  font-size: 1rem;
+  font-stretch:normal;
+  margin-bottom: 7px;
+  text-align:left;
+  margin-left:none;
+  margin-top:65px;
+}
+
+
+/*section-main*/
+
+/*section-main-a*/
+h2{
+  font-size: 1rem;
+  font-stretch:normal;
+  margin-bottom: 7px;
+  text-align:left;
+  margin-left:none;
+  margin-top:10px; 
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2%;
+  margin-right: 0;
+  padding-left: 10px;
+}
+
+/*section-main-b*/
+.section-main{
+  display:flex;
+  flex-direction: row;
+}
+#success{
+  width:200px;
+  height:200px;
+  border-radius: 10%;
+  float: center; 
+  margin-top: 100px;
+  margin-bottom:10px;
+  margin-right:60px;
+  justify-content: space-around;
+} 
+
+/*section-main-c*/
+form {
+  float: right; 
+  margin-top: 0px;
+  margin-bottom:3px;
+  margin-right:10px;
+  max-width: 200px;
+  font: 1rem Georgia, "Times New Roman", Times, serif;
+  color: rgb(19, 17, 17) ;
+  text-align:left; 
+  margin-left:335px;
+}
+ /*
+  padding: 1px 1px 1px 1px;
+  font: 11px Georgia, "Times New Roman", Times, serif;
+  color: rgb(61, 57, 57) ;
+  text-shadow: 1px 1px 1px #FFF;
+  border:1px solid #E4E4E4;*/
+}
+h2{
+  font-size: 1rem;
+  font-stretch:normal;
+  margin-bottom: 7px;
+  text-align:center;
+  margin-top:10x; 
+  margin-right:22%; 
+}
+
+h2>span {
+  display: block;
+  font-size: 1rem;
+}
+label {
+  display: block;
+  margin-right:2px;
+}
+label>span {
+  float: left;
+  width: 180px;
+  text-align: left;
+  padding-right: 10px;
+  margin-top:0px;
+ color:rgb(61, 57, 57);
+}
+input[type="text"], input[type="email"], textarea, select {
+  border: 1px solidrgb(19, 17, 17) ;
+  color: #888;
+  height:20px;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 70%;
+  font-size: 12px;
+  line-height:10px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+  -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+  -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+textarea{
+  padding: 5px 3px 3px 5px;
+}
+/*select {
+  background: #FFF url('down-arrow.png') no-repeat right;
+  background: #FFF url('down-arrow.png') no-repeat right);
+  appearance:none;
+  -webkit-appearance:none; 
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  width: 70%;
+  height: 35px;
+  line-height: 25px;
+}*/
+textarea{
+  height:50px;
+}
+.button {
+  background: #E27575;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+}
+.button:hover {
+  background: #CF7A7A;
+}
+b{
+  font-size:1.5rem;
+  color:blue;
+}
+h3{
+  font-stretch:normal;
+  margin-bottom: 7px;
+  margin-left:60px;
+  text-align:left;
+  margin-left:none;
+  margin-top:50px; 
+}
+/*section-main-d*/
+table,th ,td {
+  border: 1px solid black;
+  width:250px;
+  height:200;
+  text-align: center;
+  color:rgb(19, 17, 17); 
+  margin:10px 20px 10px 30px;
+}
+#main-footer{
+  padding:2em;
+  background:white;
+  color :rgb(19, 17, 17) ;
+  height:5px;
+  text-align: center;
+}
+.box, #main-footer div{
+  display:flex,
+  }
+
+
+
+
+
+
+
+
+
+
