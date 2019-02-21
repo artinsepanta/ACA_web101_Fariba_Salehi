@@ -1,0 +1,64 @@
+.squares {
+  display:flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  
+} 
+.square-odd{
+  height: 50px;
+  width: 50px;
+}
+.square-even{
+  height: 50px;
+  width: 50px;
+}
+
+.square-odd:hover {
+ background-color:lightgray; 
+ position:relative;
+ transform:translate(200px) rotate(360deg) scale(2 2);
+}
+.square-even:hover{
+  background-color:gray; 
+  position:relative;
+  transform:translate(200px) rotate(-360deg) scale(-2 -2);
+}
+.one{
+  background-color:blue;
+
+}
+.two{
+  background-color:palegreen;
+}
+.three{
+  background-color:plum;
+}
+.four{
+  background-color:purple;
+}
+.five{
+  background-color:green;
+}
+.six{
+  background-color:goldenrod;
+}
+.seven{
+  background-color:lightseagreen;
+}
+.eight{
+  background-color:lightblue;
+}
+.nine{
+  background-color:black;
+}
+.ten{
+  background-color:pink;
+}
+.eleven{
+  background-color:red;
+}
+.twelve{
+  background-color:yellow;
+}
