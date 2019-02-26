@@ -1,29 +1,40 @@
 .squares {
   display:flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
   align-items: center;
-  
 } 
+
 .square-odd{
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
+  -webkit-transition: width 2s, height 2s, -webkit-transform- 3s; /* Safari */
+  transition: width 2s, height 2s, transform 3s;
 }
-.square-even{
+.square-even{ 
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 3s; 
+  transition: width 2s, height 2s, transform 3s;
+  }
+  
+.squares:hover .square-odd {
+ background-color:rgb(250, 7, 7); 
+ -webkit-transform: rotate(360deg); /* Safari */
+ transform :translate(-200px , 200px) rotate(360deg) scale(2 , 2);
+ transition-timing-function: ease-in-out;
+ animation-duration: 3s;
+ 
 }
 
-.square-odd:hover {
- background-color:lightgray; 
- position:relative;
- transform:translate(200px) rotate(360deg) scale(2 2);
-}
-.square-even:hover{
-  background-color:gray; 
-  position:relative;
-  transform:translate(200px) rotate(-360deg) scale(-2 -2);
+
+.squares:hover .square-even{
+  background-color:rgb(10, 236, 47); 
+  -webkit-transform: rotate(-360deg); 
+  transform:translate(200px) rotate(-360deg) scale(0.5 ,0.5);
+  transition-timing-function: ease-in-out;
+  animation-duration: 3s;
 }
 .one{
   background-color:blue;

@@ -1,0 +1,34 @@
+html,
+body{
+  height:100% ;
+  font-family:'open sans', sans-serif;
+  background-color: #adb3e6;
+}
+.flex-container{
+  display: flex;
+}
+.flex-column{
+  flex-direction:column ;
+}
+.flex-wrap{
+  flex-wrap:wrap;
+}
+.flex-center{
+  justify-content:center;
+  align-items: center;
+}
+.board-container{
+height:100%;
+width:100%; 
+}
+.board{
+  width:618px;
+}
+.square{
+  width:200px;
+  height:200px;
+  border:3px solid rgb(41, 39, 37)
+}
+.square-hover{
+  background-color: white;
+}
