@@ -1,0 +1,225 @@
+@media (min-width: 992px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url(../images/world.jpg);*/
+  }
+  
+  /*section-header*/
+  .navigation > a {
+    float:left;
+    height: auto;
+    margin: 30px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; 
+    text-align: center;
+    font-style: normal;
+    color:blue;
+    display: inline-block;
+    width: 6rem;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: white; 
+  }
+  
+  .navigation >a {
+    animation-delay: 0s;
+    animation-duration:750ms;
+    animation-iteration-count:4;
+  }
+  #logo {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    float: right; 
+    margin-top: 3px;
+    margin-bottom:10px;
+    margin-right:10px; 
+    margin-left:570px; 
+  }
+  
+  strong{
+    font-size: 1rem;
+    color:rgb(0, 153, 153);
+    font-stretch:normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align:right;
+    margin-left:620px;
+  }
+  small {
+    font-size: smaller;
+    color:rgb(0, 153, 153);
+    margin-left:35px;
+    margin-bottom: 15px;
+    margin-left:610px;
+  }
+
+  p{
+    font-stretch:normal;
+    text-align:left;
+    color:rgb(255, 117, 26);
+    margin-left:50px;
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+  .header{
+    display:flex;
+    flex-direction:row;
+    background-color: rgb(255, 195, 77);
+  }
+  
+ 
+  #section-main-a{
+    display:flex;
+    flex-direction:row;
+    background-color: rgb(0, 255, 255);
+  }
+  h1{
+    font-size: 1rem;
+    font-stretch:normal;
+    color:rgb(255, 117, 26);
+    margin-bottom: 7px;
+    text-align:center;
+    margin-left:none;
+    margin-top:50px;
+  }
+  h2{
+    font-size: 1rem;
+    font-stretch:normal;
+    margin-bottom: 7px;
+    text-align:center;
+    margin-left:none;
+    margin-top:10px; 
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    color:rgb(255, 117, 26);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 50;
+    margin-right: 30px;
+  }
+  
+ 
+  
+  form {
+    float: right; 
+    margin-top: 0px;
+    margin-bottom:3px;
+    margin-right:50px;
+    max-width: 200px;
+    font: 1rem Georgia, "Times New Roman", Times, serif;
+    color:rgb(255, 117, 26) ;
+    text-align:left; 
+    margin-left:50px;
+  }
+   
+  }
+  h2{
+    font-size: 1rem;
+    font-stretch:normal;
+    color:rgb(255, 117, 26);
+    margin-bottom: 7px;
+    text-align:center;
+    margin-top:50px; 
+    margin-right:22%; 
+  }
+  
+  h2>span {
+    display: block;
+    font-size: 1rem;
+  }
+  label {
+    display: block;
+    margin-right:2px;
+  }
+  label>span {
+    float: left;
+    width: 180px;
+    text-align: left;
+    padding-right: 10px;
+    margin-top:0px;
+   color:rgb(255, 117, 26);
+  }
+  input[type="text"], input[type="email"], textarea, select {
+    border: 1px solidrgb(19, 17, 17) ;
+    color: #888;
+    height:20px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:10px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+  }
+  textarea{
+    padding: 5px 3px 3px 5px;
+  }
+  
+  textarea{
+    height:50px;
+  }
+  .button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #CF7A7A;
+  }
+  
+  h3{
+    font-stretch:normal;
+    color:rgb(255, 117, 26);
+    margin-bottom: 7px;
+    margin-left:60px;
+    text-align:center;
+    margin-right:50px;
+    margin-top:50px; 
+  }
+  #section-main-d{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(255, 195, 77);
+    justify-content:center; 
+  }
+  
+  
+  video{
+    max-width:500px;
+    height:400px;
+    margin-top:0px 20px 10px 70px;
+  }
+  
+  table,th ,td {
+    border: 1px solid white;
+    width:300px;
+    height:250;
+    text-align: center;
+    color: rgb(0, 153, 153);
+    margin:100px 50px 10px 50px;
+    float:center;
+  }
+  #main-footer{
+    padding:2em;
+    background:rgb(0, 230, 230);
+    color :rgb(255, 117, 26);
+    height:5px;
+    text-align: center;
+  }
+  .box, #main-footer div{
+    display:flex,
+    }
+  }
