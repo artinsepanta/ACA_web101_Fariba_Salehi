@@ -8,13 +8,40 @@
   <link rel="stylesheet" type="text/css" href="../styles/ticTacToe.css" media="screen" />
   <title>DOM-ticTacTOE</title>
 </head>
-<body onload="window.alert('Welcome to my home page!');"> 
+<body>
+  <div class=body>
+    <div class="side">
+      <div class="title">Tic Tac Toe</div>
+        
+        <div class="x">
+          <button onclick="changeMarker()">
+          <a href="The changeMarkerToX">
+            X
+          </a>
+        </button>
+
+        </div>
+        <div class="o">
+           <button onclick="changeMarker()">
+           <a href=" The changeMarkerToO()">
+            O
+            </a>
+          </button>  
+      </div>
+      <div class= "navigation"> 
+       </a>
+         <a href="../../Portfolio-Rebuild/myPortfolio/day1" id="myProtfolio">
+         MyProtfolio   
+       </a>
+      </div>
+    </div>
+
   <div class="board-container flex-container flex-column flex-center">
     <div class="flex-container">
-       <img src="" alt="" width="160"height="40px">
-       <div class="title">Tic Tac Toe</div>
+      <!--<a href="square">square</a>-->
     </div>
-    <div class="board flex-container flex-wrap">
+    <div class="board flex-container flex-wrap"  onclick="marksquare()">
+      <div class="square" ></div>
       <div class="square"></div>
       <div class="square"></div>
       <div class="square"></div>
@@ -23,9 +50,10 @@
       <div class="square"></div>
       <div class="square"></div>
       <div class="square"></div>
-      <div class="square"></div>
-    </div>
-  </div> 
-  <script src="myscripts.js"></script>
+     </div>
+   </div> 
+  
+  <script src="../scripts/ticTacToe.js"></script>
+  </div>
 </body>
 </html>
