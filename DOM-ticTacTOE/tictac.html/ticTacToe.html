@@ -8,10 +8,11 @@
   <link rel="stylesheet" type="text/css" href="../styles/ticTacToe.css" media="screen" />
   <title>DOM-ticTacTOE</title>
 </head>
-<body>
+<body onload="startGame();">
   <div class=body>
     <div class="side">
       <div class="title">Tic Tac Toe</div>
+      <div id="message">messages will go here</div>
         
         <div class="x">
           <button onclick="changeMarker()">
@@ -41,15 +42,15 @@
       <!--<a href="square">square</a>-->
     </div>
     <div class="board flex-container flex-wrap"  onclick="marksquare()">
-      <div class="square" ></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
+      <div class="square" onclick="nextMove(this);" ></div>
+      <div class="square"onclick="nextMove(this);" ></div>
+      <div class="square" onclick="nextMove(this);"></div>
+      <div class="square"onclick="nextMove(this);" ></div>
+      <div class="square" onclick="nextMove(this);"></div>
+      <div class="square"onclick="nextMove(this);" ></div>
+      <div class="square" onclick="nextMove(this);"></div>
+      <div class="square" onclick="nextMove(this);"></div>
+      <div class="square" onclick="nextMove(this);"></div>
      </div>
    </div> 
   
