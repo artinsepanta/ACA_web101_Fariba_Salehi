@@ -1,0 +1,68 @@
+textarea{
+  color:#222;
+}
+
+body{
+  font-size:1em;
+  color:#444;
+  font:Verdana, Geneva, Arial, Helvetica;
+  line-height:  1.4;
+  margin:0;
+  padding: 0;
+}
+#wrapper{
+  width:820px;
+  height:420;
+  padding:10px 0;
+  margin:10px auto;
+  border-radius:8px;
+  background-color:#444;
+}
+#header{
+  margin:0 10px 10px 0;
+  width:510px;
+  height:160px;
+  border-radius:6px;
+  background-color:#ccc;
+  position:relative;
+  float:right;
+}
+#board{
+  margin:0 10px;
+  width:510px;
+  height:250px;
+  border-radius:6px;
+  background-color:#ccc;
+  position: relative; 
+  float:right;
+}
+#moves{
+  margin:0 0 10px 10px;
+  width:280px;
+  height:420px;
+  border-radius:6px;
+  background-color:#ccc;
+  position: relative; 
+  float:right;
+}
+#moves > ol{
+  padding:3px;
+}
+#moves > ol{
+  padding:2px 0 6px 30px;
+  font-size:0.9em;
+}
+#board .post{
+  height:180px;
+  width: 20px;
+  background-color:#444;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius:6px; 
+  position: absolute;
+}
+.disc{
+  height:18px;
+border:1px solid #2c1911;
+border-radius:5px; 
+  position: absolute;
+}

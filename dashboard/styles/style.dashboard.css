@@ -36,117 +36,99 @@ body {
     background-color: white;
      
   }
+  h1{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color:white;
+    text-align:left;
+    margin-left:30px;  
+  }
   .Clock{
       margin-top:10px;
       margin-left: 50px;
       float: left;
       color:white
   }
-
-.section-main-b {
-  box-sizing: border-box;
-  width:449px;
-  height:5% ;
+h2{
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color:white;
+  text-align:left;
+  margin-left:30px; 
 }
-
-ul {
-  margin: 0;
+.main {
+  box-sizing: border-box;
+  width:400px;
+  height:300px;
+}
+#Table{
+  border: 1px solid yellowgreen;
+  width:220px;
+  margin-left:0;
   padding: 0;
 }
-
-
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding:12px 8px 12px 40px;
-  background: #eee;
-  font-size:12px;
-  transition: 0.2s;
- -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+#odd{
+  background-color: rgb(175, 171, 171)
+}
+#even{
+  background-color:grey 
 }
 
-
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-  width:30%;
-  height:5% ;
-}
-
-ul li:nth-child(even) {
-  background: #f9f9f9;
-  width:30%;
-  height:5% ;
-}
-
-ul li:hover {
-  background: #ddd;
-}
-
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding:3px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color:#555405;
-  color: white;
-}
-
-.section-main-b {
-  background-color:#555405 ;
-  padding: 3px 40px;
-  color: white;
+.container {
+  margin: 2rem auto;
+  max-width: 50rem;
   text-align: center;
 }
 
-.section-main-b:after {
-  content: "";
-  display: table;
-  clear: both;
+form {
+  margin: 2.5rem auto;
 }
 
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
+.find-me.btn {
+  font-family: inherit;
 }
 
-.addBtn {
-  padding: 12px;
-  width: 10%;
-  background: #d9d9d9;
-  color: #555;
-  float:left;
-  text-align:left;
-  font-size: 12px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+.find-me.btn,
+.not-on-https,
+.no-geolocation-support,
+.coordinates {
+  font-size: 1.5em;
 }
 
-.addBtn:hover {
-  background-color: #bbb;
+.not-on-https,
+.no-geolocation-support {
+  display: none;
 }
+
+.coordinates {
+  display: none;
+  margin-bottom: 2.5rem;
+}
+
+.visible {
+  display: block;
+}
+
+#map {
+  margin: 0 auto;
+  position: relative;
+}
+
+#map-canvas {
+  height: 25rem;
+  min-height: 25rem;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

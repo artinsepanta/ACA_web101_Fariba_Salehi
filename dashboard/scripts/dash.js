@@ -1,55 +1,83 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+$(function() {
+  let text=$("#myList").val();
+  let button = $("input[type=button]");
+  let list =$("ul");
+  button.on('click', function() {
+  list.append(`<li>${text}</li>`);
+  })
+})
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+// //Geolocation
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
+// $(document).ready(function($) {
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+//   var $findMeBtn = $('.find-me');
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
+//   if (!navigator.geolocation) {
+
+//     $findMeBtn.addClass('disabled');
+
+//     $('.no-geolocation-support').addClass('visible');
+
+  
+//   } else if (location.protocol !== 'https:') {
+
+    
+//     if (window.top === window.self) {
+
+     
+//       location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+
+//     } else {
+
+//       $findMeBtn.addClass('disabled');
+//       $('.not-on-https').addClass('visible');
+
+//     };
+
+//   } else {
+
+//     $findMeBtn.on('click', function(e) {
+
+//       e.preventDefault();
+
+//       navigator.geolocation.getCurrentPosition(function(position) { 
+
+//         var lat = position.coords.latitude;
+//         var lng = position.coords.longitude;
+
+//         $('.latitude').text(lat.toFixed(6) + '°');
+//         $('.longitude').text(lng.toFixed(6) + '°');
+//         $('.coordinates').addClass('visible');
+
+//         // https://developers.google.com/maps/documentation/javascript/reference
+        
+//         var mapLatLng = new google.maps.LatLng(lat, lng);
+
+//         var mapOptions = {
+//           zoom: 15,
+//           mapTypeControl: false,
+//           center: mapLatLng,
+//         };
+
+//         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+   
+//         var mapMarker = new google.maps.Marker({
+//           position: mapLatLng,
+//           map: map,
+//           title: 'Your browser/device places you here',
+//         });
+       
+//         $(window).resize(function() {
+//           google.maps.event.trigger(map, 'resize');
+//           map.panTo(mapLatLng);
+//         });
+
+//       });
+
+//     });
+
+//   };
+
+// });

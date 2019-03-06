@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="./src/Dashboard.html">
-  <link rel="stylesheet" media="(max-width: 400px)" href="my400wide-style.css" />
-  <link rel="stylesheet" media="(max-width: 800px)" href="my800wide-style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet"  herf="backgrond_styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="stylesheet" href="../styles/style.dashboard.css">
    <title>Dashboard</title>
 </head>
@@ -36,79 +34,54 @@
       <h1>
         Always Sunny
       </h1>
-      <img src=
+     <!-- <img src="">-->
     </div>
 
     <!--section-main-b-->
 
-    <div id="myDIV" class="section-main-b">
+    <div  class="main">
       <h2>My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
-    </div>
+      <form  id="todo-form">
+        <input type="text" id="myList">
+        <input type="button" id="ToDo" value="Add">
+      </form>   
     
-    <ul id="myUL">
-      <li>1 </li>
-      <li class="checked">2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-    </ul>
-    <!--<div class="table" id="section-main-b" >
-      <table>
-         <tr>
-           <th>*****</th>
-           <th>Morning</th>
-           <th>Noon</th>
-           <th>Afternoon</th>
-           <th>Evening</th>
-         </tr>
-         <tr>
-           <td>1</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           
-         </tr>
-         <tr>
-           <td>2</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-         <tr>
-           <td>3</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-         <tr>
-           <td>4</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-         <tr>
-           <td>4</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-         </tr>
-         <tr>
-           <td>5</td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           </tr>
-       </table>
-     </div> -->
+      <ul id="Table">
+        <li class="old"  id="odd">1 </li>
+        <li class="old"  id="even">2</li>
+        <li class="old"  id="odd">3</li>
+      </ul>
+  </div>
+  <div class="container">
+
+    <h1>My Location?!</h1>
+    <i class="material-icons">
+      M
+    </i>
+    <i class="material-icons" style="font-size:36px">
+      M
+    </i>
+    <i class="material-icons" style="font-size:48px;color:red">
+      M
+    </i>
+  
+    <form class="form-app">
+      <div class="form-location">
+        <button type="button" class="find-me btn btn-info btn-block">
+          Find My location
+        </button>
+      </div>
+    </form>
+  
+    <p class="not-on-https">Not on HTTPS :( Most browsers require HTTPS to run the Geolocation API.</p>
+    <p class="no-geolocation-support">The Geolocation API isn't supported in this browser :(</p>
+  
+    <p class="coordinates">Latitude is <b class="latitude">00.000000°</b>, longitude is <b class="longitude">00.000000°</b>.</p>
+  
+    <div id="map">
+      <div id="map-canvas"></div>
+    </div>
+   </div>
   </main>
             
             
@@ -158,8 +131,8 @@
      <h1>To DO</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, illo iure quasi dignissimos possimus atque in doloribus repellendus odio. Voluptatibus perspiciatis commodi omnis doloremque repellendus, blanditiis cupiditate quam officia mollitia.</p>
     </div>-->
-
-    <script src="myscripts.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+    <script src="../scripts/dash.js"></script>
   </body>
   </html>
   
