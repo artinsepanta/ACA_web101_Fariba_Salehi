@@ -118,30 +118,7 @@ form {
   font-size: 1.5em;
 }
 
-.not-on-https,
-.no-geolocation-support {
-  display: none;
-}
 
-.coordinates {
-  display: none;
-  margin-bottom: 2.5rem;
-}
-
-.visible {
-  display: block;
-}
-
-#map {
-  margin: 0 auto;
-  position: relative;
-}
-
-#map-canvas {
-  height: 400px;
-  min-height: 400px;
-  width: 100%;
-}
 
 
 

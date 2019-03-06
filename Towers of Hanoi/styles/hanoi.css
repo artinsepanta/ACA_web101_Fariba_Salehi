@@ -23,7 +23,7 @@ body{
   width:510px;
   height:160px;
   border-radius:6px;
-  background-color:#ccc;
+  /*background-color:#ccc;*/
   position:relative;
   float:right;
 }
@@ -32,7 +32,7 @@ body{
   width:510px;
   height:250px;
   border-radius:6px;
-  background-color:#ccc;
+  /*background-color:#ccc;*/
   position: relative; 
   float:right;
 }
@@ -41,7 +41,7 @@ body{
   width:280px;
   height:420px;
   border-radius:6px;
-  background-color:#ccc;
+  /*background-color:#ccc;*/
   position: relative; 
   float:right;
 }
