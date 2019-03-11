@@ -11,40 +11,54 @@
 <body>
   <!--section-header-->
   <header>
-    <div class="header" >
+    <div class="flex-container" id="header" >
       <div class="Clock">
           <iframe src="http://free.timeanddate.com/clock/i6njb3jk/n24/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="110" height="110"></iframe>
+            <br>
+            <br>
+          <iframe src="http://free.timeanddate.com/clock/i6nzxbkc/n24/fs16/fcfff/tct/pc333/ahl/tt1/tw0" frameborder="0" width="147" height="20" allowTransparency="true"></iframe>
       </div> 
       <div class= "navigation">
-        <a href="#">
+        <a href="https://www.sciencedaily.com/news/mind_brain/psychology/">
           News
         </a>
-        <a href="#">
+        <a href="https://www.google.com/">
           Googel
         </a>
-        <a href="#">
+        <a href="https://www.w3schools.com/html/">
           W3school
         </a>
       </div>
   </div> 
-  </header>      
-            
+  </header>        
     <!--section-main-a-->        
   <main>
-    <div class="Weather">
-      <h1>
-        Always Sunny
-      </h1>
-     <!-- <img src="">-->
+    <div id="weather"> 
+      <h1>Weather</h1> 
+      <p>Always Sunny</p>
+      <img src="../image/sunny weather.JPG" id="img">
     </div>
-
+  <!-- <div class="new">
+      <button class="dropdown-btn">
+        School 
+        <i class="school"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">
+          Idean
+        </a>
+        <a href="#">
+          Artin
+        </a>
+      </div>
+    </div>-->
+    
     <!--section-main-b-->
-
     <div  class="main">
       <h2>My To Do List</h2>
       <form  id="todo-form">
         <input type="text" id="myList">
-        <input type="button" id="ToDo" value="Add">
+        <input type="submit" id="ToDo" value="Add">
       </form>   
     
       <ul id="Table">
@@ -53,6 +67,23 @@
         <li class="old"  id="odd">3</li>
       </ul>
   </div>
+  <br>
+
+  <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Schools 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Idean</a>
+          <a href="#">Artin</a>
+          <a href="https://campus.austincodingacademy.com">
+            ACA
+          </a>
+        </div>
+      </div>    
+   </div>
+   
   <div class="container">
     <h3>My Location?!</h3>
     <i class="material-icons"style="font-size:24px;color=rgb(255, 230, 230)" >
@@ -64,35 +95,13 @@
     <i class="material-icons" style="font-size:48px;color:red">
       M
     </i>
-    <button onclick="mylocation()" class="find-me btn btn-info btn-block">click to Get my Location</button>
+    <button onclick = "myLocation()" class="find-me btn btn-info btn-block">
+      click to Get my Location
+    </button>
     <p id="myloc"></p>
-  <!-- <form class="form-app">
-      <div class="form-location">
-        <button type="button" class="find-me btn btn-info btn-block">
-          Find My location
-        </button>
-      </div>
-    </form>
-      <p class="not-on-https">Not on HTTPS :( Most browsers require HTTPS to run the Geolocation API.</p>
-     <p class="no-geolocation-support">The Geolocation API isn't supported in this browser :(</p>
-     <p class="coordinates">Latitude is <b class="latitude">00.000000°</b>, longitude is <b class="longitude">00.000000°</b>.</p>
-     <div id="map">
-      <div id="map-canvas"></div>
-    </div>
-   </div>-->
+  
   </main>
-            
-            
-       
-
-
-    
-      
-     
-      
-     
-    
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
     <script src="../scripts/dash.js"></script>
   </body>
   </html>

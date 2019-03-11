@@ -1,23 +1,47 @@
-$(function() {
-  let text=$("#myList").val();
-  let button = $("input[type=button]");
+$( document ).ready(function() {
+  let button = $("input[type=submit]");
   let list =$("ul");
-  button.on('click', function() {
-  list.append(`<li>${text}</li>`);
+  let form=$("#todo-form");
+  form.on('submit', function(event){
+    event.preventDefault();
+    console.log("event:", event)
+    let text=$("input[type=text]").val();
+    list.append(`<li>${text}</li>`)
   })
-})
+    
 
 
 // //Geolocation
 
  var loc=document.getElementById('myloc');
+
  function myLocation(){
-   if(navigator.geolocation){
-     navigator.geolocation.getCurrentPosition(position);
+
+   if (navigator.geolocation) {
+     console.log("navigator.geolocation:",navigator.geolocation)
+     navigator.geolocation.getCurrentPosition(showPosition);
     }else{
-      loc.HTML="location Tracking not posible";
+      loc.innerHTML="location Tracking not Posible.";
     }
  }
  function showPosition(position){
-   loc.innerHTML="longitude: "+position.coords.longitude +"<br>latitude:" + position.coords.latitude + "<br>";
+   loc.innerHTML="longitude: " + position.coords.longitude + "<br>latitude:" + position.coords.latitude + "<br>";
  }
+
+ var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+});
+}
+
+
+
