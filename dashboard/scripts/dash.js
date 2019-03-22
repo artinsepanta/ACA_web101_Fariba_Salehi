@@ -12,23 +12,7 @@ $( document ).ready(function() {
 
 
 // //Geolocation
-
- var loc=document.getElementById('myloc');
-
- function myLocation(){
-
-   if (navigator.geolocation) {
-     console.log("navigator.geolocation:",navigator.geolocation)
-     navigator.geolocation.getCurrentPosition(showPosition);
-    }else{
-      loc.innerHTML="location Tracking not Posible.";
-    }
- }
- function showPosition(position){
-   loc.innerHTML="longitude: " + position.coords.longitude + "<br>latitude:" + position.coords.latitude + "<br>";
- }
-
- var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -40,8 +24,20 @@ for (i = 0; i < dropdown.length; i++) {
   } else {
   dropdownContent.style.display = "block";
   }
-});
+})
 }
-
+});
+function myLocation(){
+  var loc=document.getElementById('myloc');
+ if (navigator.geolocation) {
+   console.log("navigator.geolocation:",navigator.geolocation)
+   navigator.geolocation.getCurrentPosition(showPosition);
+  }else{
+    loc.innerHTML="location Tracking not Posible.";
+  }
+}
+function showPosition(position){
+ loc.innerHTML="longitude: " + position.coords.longitude + "<br>latitude:" + position.coords.latitude + "<br>";
+}
 
 
