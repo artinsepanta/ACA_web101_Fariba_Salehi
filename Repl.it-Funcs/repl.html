@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=, initial-scale=1.0">-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Repl.it-Funcs</title>
+</head>
+<body>
+    
+ <script>
+   // Print out each word
+   const word= ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant']
+
+const printOutWord = (word) => {
+  word[1]="elegant";
+  document.write("whisper"  +  " "  +"waffle"  +  " "  + "elegant" + " " + " leapard" + " " + " shinding" + " sneez"+ " " + "whimper");
+}
+
+printOutWord(word) // =>
+'waffle'
+'whimper'
+'sneeze'
+'shindig'
+'leopard'
+'whisper'
+'elegant'
+
+document.write("<hr/>") 
+//Build Addition Function
+var a = 3;
+var b = 8;
+const addNums = (a, b) => {
+  return a + b ;
+}
+document.write (addNums(3, 8));  // => 11
+document.write("<hr/>") 
+
+//Remove Zeros
+var x = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0];
+var y= 0 ;
+document.write("1,"- "0" + "9,"+"18,"+"3,"-"0"-"0" + "9,"+"70,"+"44,"-"0")
+
+/*const exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
+
+const removeZeros = (arr) => {
+  // your code here
+}
+
+removeZeros(exampleArr) // => [1, 9, 18, 3, 9, 70, 44]*/
+
+
+document.write("<hr/>") 
+//FizzBuzz
+/*'Fizz' if the number is divisible by only three
+'Buzz' if the number is divisible by only five
+'FizzBuzz' if the number is divisible by three and five
+the number itself if it is none of these
+Build this in a repl.it or codepen(with codePen open the console)*/
+
+for (var i=1; i <= 20; i++)
+{
+    if (i % 3 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+
+document.write("<hr/>") 
+//Sum of Array Squared
+const myArr =[2, 3, 5, 6, 8]
+
+const sumSquared = (arr) => {
+  var a = 2*2
+  var b = 3*3
+  var c = 5*5
+  var d = 6*6
+  var e = 8*8
+  function addNumbers(a, b, c, d, e) {
+          return a + b + c + d + e;
+        }
+        document.write(addNumbers(a, b, c, d, e))
+}
+
+sumSquared(myArr) // => 136
+
+
+document.write("<hr/>") 
+
+//If it starts with a "W"
+const wordArr = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant', 'wolf', 'weasel']
+var w = ["waffle","whimper","wolf", "weasel", "whisper"];
+var n =['sneeze', 'shindig', 'leopard',];
+if(w){
+  document.write(w);
+} else if(n) {
+document.removeEventListener;
+}
+  //const printOnlyWWords = (arr) => {
+  // your code here
+//}
+
+
+printOnlyWWords(wordArr) // =>
+'waffle'
+'whimper'
+'sneeze'
+'shindig'
+'leopard'
+'whisper'
+'elegant'
+ </script> 
+</body>
+</html>
