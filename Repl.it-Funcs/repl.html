@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--<meta name="viewport" content="width=, initial-scale=1.0">-->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repl.it-Funcs</title>
 </head>
@@ -10,7 +9,7 @@
     
  <script>
    // Print out each word
-  const word= ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant']
+ /*const word= ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant']
 
 const printOutWord = (word) => {
   word[1]="elegant";
@@ -25,9 +24,18 @@ printOutWord(word) // =>
 'shindig'
 'leopard'
 'whisper'
-'elegant'
+'elegant'*/
+
+var word=['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant'];
+var text="";
+var i ;
+for( i in word) {
+  text+= word[i]+" "+ "<br>";
+  }
+  document.write("word");
 
 document.write("<hr/>") 
+
 //Build Addition Function
 var a = 3;
 var b = 8;
@@ -38,26 +46,15 @@ document.write (addNums(3, 8));  // => 11
 document.write("<hr/>") 
 
 //Remove Zeros
-var x = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0];
-var y= 0 ;
+var y = 0;
+let x = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0];
+let removed= 0 ;
+let removed = x .splice (y)
 document.write("1,"- "0" + "9,"+"18,"+"3,"-"0"-"0" + "9,"+"70,"+"44,"-"0")
-
-/*const exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
-
-const removeZeros = (arr) => {
-  // your code here
-}
-
-removeZeros(exampleArr) // => [1, 9, 18, 3, 9, 70, 44]*/
+alert(removed);
 
 
 document.write("<hr/>") 
-//FizzBuzz
-/*'Fizz' if the number is divisible by only three
-'Buzz' if the number is divisible by only five
-'FizzBuzz' if the number is divisible by three and five
-the number itself if it is none of these
-Build this in a repl.it or codepen(with codePen open the console)*/
 
 for (var i=1; i <= 20; i++)
 {
@@ -93,22 +90,22 @@ sumSquared(myArr) // => 136
 document.write("<hr/>") 
 
 //If it starts with a "W"
-/*const wordArr = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant', 'wolf', 'weasel']
+const wordArr = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant', 'wolf', 'weasel']
 var w = ["waffle","whimper","wolf", "weasel", "whisper"];
 var n =['sneeze', 'shindig', 'leopard',];
 if(w){
   document.write(w);
 } else if(n) {
 document.removeEventListener;
-}*/
-/* var words = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant', 'wolf', 'weasel'];
+}
+ var words = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant', 'wolf', 'weasel'];
  var text = " ";
  var i;
  for (i = 0; i = wordStartsWithW; i++){
    return(i);
- }*/
+ }
 
-
+ 
 printOnlyWWords(wordArr) // =>
 'waffle'
 'whimper'

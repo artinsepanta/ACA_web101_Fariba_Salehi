@@ -1,4 +1,4 @@
-.flexbox-container{
+/*.flexbox-container{
    display:flex;
    grid-template-columns: 1fr repeat(5 ,1fr);
    grid-template-rows: 50px repeat(6 ,50px);
@@ -105,4 +105,14 @@ section:last-child {
       flex-wrap: nowrap;
       -webkit-box-flex-group: inherit;
     }
-}
+}*/
+input {
+    width: 119.5px;
+    margin-left: 2px
+  }
+  .button {
+    border: 1px solid black;
+    width: 26px;
+    text-align: center;
+    cursor: pointer;
+  }
